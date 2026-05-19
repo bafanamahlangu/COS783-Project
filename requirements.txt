@@ -1,0 +1,12 @@
+# Core ML / NLP
+torch==2.12.0
+sentence-transformers==5.5.0
+transformers==5.8.1
+spacy==3.8.14
+
+# spaCy English model (install separately after spacy)
+# python -m spacy download en_core_web_sm
+
+# Data handling
+pandas==2.2.3
+nltk==3.9.4
