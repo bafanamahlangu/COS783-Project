@@ -21,9 +21,11 @@ Instead of looking for exact words, it understands the **meaning** behind your s
 COS783-Project-main/
 ├── Data/
 │   └── example.csv       # Sample data file
+│    └── fraud_emails.csv # Demonstration data file
 ├── file_reader.py         # Reads and splits the CSV into sentences
 ├── keyword_searcher.py    # AI search logic (embeddings + similarity)
 ├── main.py                # Entry point — handles user input and displays results
+├── fraud_email_data_creation.ipynb #dataset creation
 └── requirements.txt       # Python dependencies
 ```
 
