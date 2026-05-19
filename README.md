@@ -81,6 +81,14 @@ Top 5 results for: 'drug transaction'
     Text: Please wire the cash to Jamie to wrap up yesterday's transaction
     Entities: {'PERSON': ['Jamie'], 'DATE': ['yesterday']}
 ```
+## Running the streamlit app
+```
+streamlit run app.py
+```
+run the above or try below if you run into an error running the above:
+```
+python -m streamlit run app.py
+```
 
 ---
 
