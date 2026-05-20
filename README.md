@@ -20,13 +20,14 @@ Instead of looking for exact words, it understands the **meaning** behind your s
 ```
 COS783-Project-main/
 ├── Data/
-│   └── example.csv       # Sample data file
-│    └── fraud_emails.csv # Demonstration data file
-├── file_reader.py         # Reads and splits the CSV into sentences
-├── keyword_searcher.py    # AI search logic (embeddings + similarity)
-├── main.py                # Entry point — handles user input and displays results
-├── fraud_email_data_creation.ipynb #dataset creation
-└── requirements.txt       # Python dependencies
+│   ├── example.csv                      # Sample data file
+│   └── fraud_emails.csv                 # Demonstration data file
+├── file_reader.py                        # Reads and splits the CSV into sentences
+├── keyword_searcher.py                   # AI search logic (embeddings + similarity)
+├── main.py                               # CLI entry point
+├── app.py                                # Streamlit web app
+├── fraud_email_data_creation.ipynb       # Dataset creation notebook
+└── requirements.txt                      # Python dependencies
 ```
 
 ---
@@ -81,14 +82,19 @@ Top 5 results for: 'drug transaction'
     Text: Please wire the cash to Jamie to wrap up yesterday's transaction
     Entities: {'PERSON': ['Jamie'], 'DATE': ['yesterday']}
 ```
-## Running the streamlit app
-```
+## Running the web app
+
+```bash
 streamlit run app.py
 ```
-run the above or try below if you run into an error running the above:
-```
+
+Or if that doesn't work:
+
+```bash
 python -m streamlit run app.py
 ```
+
+The web app lets you upload a CSV, set the number of results, filter by similarity score, and export results.
 
 ---
 
@@ -99,3 +105,4 @@ python -m streamlit run app.py
 - [PyTorch](https://pytorch.org/) — Backend for running the AI model
 - [pandas](https://pandas.pydata.org/) — Reading CSV files
 - [NLTK](https://www.nltk.org/) — Splitting messages into sentences
+- [Streamlit](https://streamlit.io/) — Web app interface
