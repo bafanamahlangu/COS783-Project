@@ -41,7 +41,7 @@ pip install -r requirements.txt
 
 **2. Download the English language model for spaCy**
 ```bash
-python -m spacy download en_core_web_sm
+python -m spacy download en_core_web_lg
 ```
 
 ---

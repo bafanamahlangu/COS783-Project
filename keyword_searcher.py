@@ -48,7 +48,7 @@ _MODEL = SentenceTransformer("all-MiniLM-L6-v2")
 
 # Load spaCy English model; falls back gracefully if not installed
 try:
-    _NLP = spacy.load("en_core_web_sm")
+    _NLP = spacy.load("en_core_web_lg")
 except OSError:
     _NLP = None
     print(
