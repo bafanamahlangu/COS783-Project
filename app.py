@@ -15,6 +15,7 @@ Key fixes vs previous version:
   - Model loaded via @st.cache_resource so it survives Streamlit re-runs
 """
 
+import html
 import io
 import os
 import tempfile
@@ -418,11 +419,7 @@ if search_clicked:
 
         entity_section = ""
         if entity_html:
-            entity_section = f"""
-            <div class="entity-divider">
-                <span class="entity-section-label">Entities</span>
-                {entity_html}
-            </div>"""
+            entity_section = f'<div class="entity-divider"><span class="entity-section-label">Entities</span>{entity_html}</div>'
 
         st.markdown(f"""
         <div class="result-card {rank_cls}">
@@ -443,7 +440,7 @@ if search_clicked:
                     </div>
                 </div>
             </div>
-            <div class="result-text">{r['text']}</div>
+            <div class="result-text">{html.escape(r['text'])}</div>
             {entity_section}
         </div>
         """, unsafe_allow_html=True)
