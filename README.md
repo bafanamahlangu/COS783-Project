@@ -5,6 +5,14 @@ A university project that uses AI to search through forensic text data like emai
 Instead of looking for exact words, it understands the **meaning** behind your search. For example, searching for "drug transaction" will also find messages like "send the money for the drugs" or "wire the cash".
 
 ---
+## Team Members
+
+- Tedy Mbusi Dube - u26812976
+- Khensani Emmelda Chabalala - u23826305
+- Bafana Christopher Mahlangu - u26812453
+
+
+---
 
 ## What it does
 
